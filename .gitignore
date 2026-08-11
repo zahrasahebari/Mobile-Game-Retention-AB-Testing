@@ -179,3 +179,10 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+# Ignore raw project data
+data/raw/**
+!data/raw/.gitkeep
+
+# Ignore macOS Finder files
+.DS_Store
+**/.DS_Store
