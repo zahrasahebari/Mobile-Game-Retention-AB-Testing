@@ -1,0 +1,4 @@
+analysis,effect,effect_unit,ci_lower,ci_upper,p_value,statistically_significant
+Payer conversion: B vs A,-0.06334548064021554,percentage points,-0.12224414595398342,-0.004446815326447661,0.035028524642854865,True
+ARPU: full dataset,1.3375668563128222,revenue units,-2.8671611855433285,5.542294898168973,0.5329647014130868,False
+ARPU: excluding IQR-flagged observations,24.048360560998205,revenue units,22.791064729656217,25.305656392340193,1.5298022123111013e-306,True
