@@ -185,4 +185,4 @@ data/raw/**
 
 # Ignore macOS Finder files
 .DS_Store
-**/.DS_Store
+**/.DS_Store*.twbr
