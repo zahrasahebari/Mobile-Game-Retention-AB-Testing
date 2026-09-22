@@ -1,0 +1,2176 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ab_test_group_summary' inline='true' name='federated.1muo9cy1drb53y17v8ehf19otpxz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ab_test_group_summary' name='textscan.0ptcs8c088bfic1bzevqs0vutun2'>
+            <connection class='textscan' directory='/Users/zhrs/Documents/Data Analytics Portfolio/Mobile-Game-Retention-AB-Testing/outputs' filename='ab_test_group_summary.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ptcs8c088bfic1bzevqs0vutun2' name='ab_test_group_summary.csv' table='[ab_test_group_summary#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='testgroup' ordinal='0' />
+            <column datatype='integer' name='participants' ordinal='1' />
+            <column datatype='integer' name='total_revenue' ordinal='2' />
+            <column datatype='real' name='average_revenue_per_user' ordinal='3' />
+            <column datatype='integer' name='paying_users' ordinal='4' />
+            <column datatype='real' name='payer_conversion_rate' ordinal='5' />
+            <column datatype='integer' name='maximum_revenue' ordinal='6' />
+            <column datatype='real' name='payer_conversion_rate_pct' ordinal='7' />
+            <column datatype='real' name='average_revenue_per_payer' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ab_test_group_summary.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>testgroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[testgroup]</local-name>
+            <parent-name>[ab_test_group_summary.csv]</parent-name>
+            <remote-alias>testgroup</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>participants</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[participants]</local-name>
+            <parent-name>[ab_test_group_summary.csv]</parent-name>
+            <remote-alias>participants</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_revenue]</local-name>
+            <parent-name>[ab_test_group_summary.csv]</parent-name>
+            <remote-alias>total_revenue</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_revenue_per_user</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_revenue_per_user]</local-name>
+            <parent-name>[ab_test_group_summary.csv]</parent-name>
+            <remote-alias>average_revenue_per_user</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>paying_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[paying_users]</local-name>
+            <parent-name>[ab_test_group_summary.csv]</parent-name>
+            <remote-alias>paying_users</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payer_conversion_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[payer_conversion_rate]</local-name>
+            <parent-name>[ab_test_group_summary.csv]</parent-name>
+            <remote-alias>payer_conversion_rate</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maximum_revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[maximum_revenue]</local-name>
+            <parent-name>[ab_test_group_summary.csv]</parent-name>
+            <remote-alias>maximum_revenue</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payer_conversion_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[payer_conversion_rate_pct]</local-name>
+            <parent-name>[ab_test_group_summary.csv]</parent-name>
+            <remote-alias>payer_conversion_rate_pct</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_revenue_per_payer</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_revenue_per_payer]</local-name>
+            <parent-name>[ab_test_group_summary.csv]</parent-name>
+            <remote-alias>average_revenue_per_payer</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ab_test_group_summary.csv' datatype='table' name='[__tableau_internal_object_id__].[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]' role='measure' type='quantitative' />
+      <column caption='Average Revenue Per Payer' datatype='real' name='[average_revenue_per_payer]' role='measure' type='quantitative' />
+      <column caption='Average Revenue Per User' datatype='real' name='[average_revenue_per_user]' role='measure' type='quantitative' />
+      <column caption='Maximum Revenue' datatype='integer' name='[maximum_revenue]' role='measure' type='quantitative' />
+      <column caption='Participants' datatype='integer' name='[participants]' role='measure' type='quantitative' />
+      <column caption='Payer Conversion Rate' datatype='real' name='[payer_conversion_rate]' role='measure' type='quantitative' />
+      <column caption='Payer Conversion Rate Pct' datatype='real' name='[payer_conversion_rate_pct]' role='measure' type='quantitative' />
+      <column caption='Paying Users' datatype='integer' name='[paying_users]' role='measure' type='quantitative' />
+      <column caption='Testgroup' datatype='string' name='[testgroup]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;a&quot;' value='Group A' />
+          <alias key='&quot;b&quot;' value='Group B' />
+        </aliases>
+      </column>
+      <column caption='Total Revenue' datatype='integer' name='[total_revenue]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='/var/folders/m8/79c70_4d4xn1s1qrrkxly4p40000gn/T/tableau-temp/#TableauTemp_1adnsnm0ivtvsr15eq3rq0m0rbmr.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/24/2026 10:32:28 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>testgroup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[testgroup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>testgroup</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ab_test_group_summary.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>participants</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[participants]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>participants</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ab_test_group_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_revenue</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ab_test_group_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_revenue_per_user</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[average_revenue_per_user]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_revenue_per_user</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ab_test_group_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>paying_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[paying_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>paying_users</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ab_test_group_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payer_conversion_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[payer_conversion_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payer_conversion_rate</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ab_test_group_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>maximum_revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[maximum_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>maximum_revenue</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ab_test_group_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payer_conversion_rate_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[payer_conversion_rate_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payer_conversion_rate_pct</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ab_test_group_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_revenue_per_payer</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[average_revenue_per_payer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_revenue_per_payer</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ab_test_group_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='ab_test_group_summary.csv' id='ab_test_group_summary.csv_85C6AF804BE246FF99BA5D1216B22CE7'>
+            <properties context=''>
+              <relation connection='textscan.0ptcs8c088bfic1bzevqs0vutun2' name='ab_test_group_summary.csv' table='[ab_test_group_summary#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='testgroup' ordinal='0' />
+                  <column datatype='integer' name='participants' ordinal='1' />
+                  <column datatype='integer' name='total_revenue' ordinal='2' />
+                  <column datatype='real' name='average_revenue_per_user' ordinal='3' />
+                  <column datatype='integer' name='paying_users' ordinal='4' />
+                  <column datatype='real' name='payer_conversion_rate' ordinal='5' />
+                  <column datatype='integer' name='maximum_revenue' ordinal='6' />
+                  <column datatype='real' name='payer_conversion_rate_pct' ordinal='7' />
+                  <column datatype='real' name='average_revenue_per_payer' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='sensitivity_analysis_summary' inline='true' name='federated.0uydquq1gvep231a2ti931tjdauy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sensitivity_analysis_summary' name='textscan.0w6mmhb07v39p80zywgvt0hd7qdi'>
+            <connection class='textscan' directory='/Users/zhrs/Documents/Data Analytics Portfolio/Mobile-Game-Retention-AB-Testing/outputs' filename='sensitivity_analysis_summary.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0w6mmhb07v39p80zywgvt0hd7qdi' name='sensitivity_analysis_summary.csv' table='[sensitivity_analysis_summary#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='testgroup' ordinal='0' />
+            <column datatype='integer' name='participants' ordinal='1' />
+            <column datatype='integer' name='total_revenue' ordinal='2' />
+            <column datatype='real' name='average_revenue_per_user' ordinal='3' />
+            <column datatype='integer' name='paying_users' ordinal='4' />
+            <column datatype='real' name='payer_conversion_rate_pct' ordinal='5' />
+            <column datatype='real' name='average_revenue_per_payer' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sensitivity_analysis_summary.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>testgroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[testgroup]</local-name>
+            <parent-name>[sensitivity_analysis_summary.csv]</parent-name>
+            <remote-alias>testgroup</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[sensitivity_analysis_summary.csv_1C2299F4A0FB4589BD90A42C18ACE880]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>participants</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[participants]</local-name>
+            <parent-name>[sensitivity_analysis_summary.csv]</parent-name>
+            <remote-alias>participants</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sensitivity_analysis_summary.csv_1C2299F4A0FB4589BD90A42C18ACE880]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_revenue]</local-name>
+            <parent-name>[sensitivity_analysis_summary.csv]</parent-name>
+            <remote-alias>total_revenue</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sensitivity_analysis_summary.csv_1C2299F4A0FB4589BD90A42C18ACE880]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_revenue_per_user</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_revenue_per_user]</local-name>
+            <parent-name>[sensitivity_analysis_summary.csv]</parent-name>
+            <remote-alias>average_revenue_per_user</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sensitivity_analysis_summary.csv_1C2299F4A0FB4589BD90A42C18ACE880]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>paying_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[paying_users]</local-name>
+            <parent-name>[sensitivity_analysis_summary.csv]</parent-name>
+            <remote-alias>paying_users</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sensitivity_analysis_summary.csv_1C2299F4A0FB4589BD90A42C18ACE880]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payer_conversion_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[payer_conversion_rate_pct]</local-name>
+            <parent-name>[sensitivity_analysis_summary.csv]</parent-name>
+            <remote-alias>payer_conversion_rate_pct</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sensitivity_analysis_summary.csv_1C2299F4A0FB4589BD90A42C18ACE880]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_revenue_per_payer</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_revenue_per_payer]</local-name>
+            <parent-name>[sensitivity_analysis_summary.csv]</parent-name>
+            <remote-alias>average_revenue_per_payer</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sensitivity_analysis_summary.csv_1C2299F4A0FB4589BD90A42C18ACE880]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='sensitivity_analysis_summary.csv' datatype='table' name='[__tableau_internal_object_id__].[sensitivity_analysis_summary.csv_1C2299F4A0FB4589BD90A42C18ACE880]' role='measure' type='quantitative' />
+      <column caption='Average Revenue Per Payer' datatype='real' name='[average_revenue_per_payer]' role='measure' type='quantitative' />
+      <column caption='Average Revenue Per User' datatype='real' name='[average_revenue_per_user]' role='measure' type='quantitative' />
+      <column caption='Participants' datatype='integer' name='[participants]' role='measure' type='quantitative' />
+      <column caption='Payer Conversion Rate Pct' datatype='real' name='[payer_conversion_rate_pct]' role='measure' type='quantitative' />
+      <column caption='Paying Users' datatype='integer' name='[paying_users]' role='measure' type='quantitative' />
+      <column caption='Testgroup' datatype='string' name='[testgroup]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;a&quot;' value='Group A' />
+          <alias key='&quot;b&quot;' value='Group B' />
+        </aliases>
+      </column>
+      <column caption='Total Revenue' datatype='integer' name='[total_revenue]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='/var/folders/m8/79c70_4d4xn1s1qrrkxly4p40000gn/T/tableau-temp/#TableauTemp_1d8q4yc0g5urql0zzzvhd0foai01.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/24/2026 10:41:40 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>testgroup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[testgroup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>testgroup</remote-alias>
+              <ordinal>0</ordinal>
+              <family>sensitivity_analysis_summary.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[sensitivity_analysis_summary.csv_1C2299F4A0FB4589BD90A42C18ACE880]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>participants</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[participants]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>participants</remote-alias>
+              <ordinal>1</ordinal>
+              <family>sensitivity_analysis_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sensitivity_analysis_summary.csv_1C2299F4A0FB4589BD90A42C18ACE880]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_revenue</remote-alias>
+              <ordinal>2</ordinal>
+              <family>sensitivity_analysis_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sensitivity_analysis_summary.csv_1C2299F4A0FB4589BD90A42C18ACE880]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_revenue_per_user</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[average_revenue_per_user]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_revenue_per_user</remote-alias>
+              <ordinal>3</ordinal>
+              <family>sensitivity_analysis_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sensitivity_analysis_summary.csv_1C2299F4A0FB4589BD90A42C18ACE880]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>paying_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[paying_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>paying_users</remote-alias>
+              <ordinal>4</ordinal>
+              <family>sensitivity_analysis_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sensitivity_analysis_summary.csv_1C2299F4A0FB4589BD90A42C18ACE880]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payer_conversion_rate_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[payer_conversion_rate_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payer_conversion_rate_pct</remote-alias>
+              <ordinal>5</ordinal>
+              <family>sensitivity_analysis_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sensitivity_analysis_summary.csv_1C2299F4A0FB4589BD90A42C18ACE880]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_revenue_per_payer</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[average_revenue_per_payer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_revenue_per_payer</remote-alias>
+              <ordinal>6</ordinal>
+              <family>sensitivity_analysis_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sensitivity_analysis_summary.csv_1C2299F4A0FB4589BD90A42C18ACE880]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='sensitivity_analysis_summary.csv' id='sensitivity_analysis_summary.csv_1C2299F4A0FB4589BD90A42C18ACE880'>
+            <properties context=''>
+              <relation connection='textscan.0w6mmhb07v39p80zywgvt0hd7qdi' name='sensitivity_analysis_summary.csv' table='[sensitivity_analysis_summary#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='testgroup' ordinal='0' />
+                  <column datatype='integer' name='participants' ordinal='1' />
+                  <column datatype='integer' name='total_revenue' ordinal='2' />
+                  <column datatype='real' name='average_revenue_per_user' ordinal='3' />
+                  <column datatype='integer' name='paying_users' ordinal='4' />
+                  <column datatype='real' name='payer_conversion_rate_pct' ordinal='5' />
+                  <column datatype='real' name='average_revenue_per_payer' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='outlier_revenue_summary' inline='true' name='federated.1kulcyv1unzu25144d6ed1brpb88' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='outlier_revenue_summary' name='textscan.0dvikcw1v49m7f12yi8df1adogpx'>
+            <connection class='textscan' directory='/Users/zhrs/Documents/Data Analytics Portfolio/Mobile-Game-Retention-AB-Testing/outputs' filename='outlier_revenue_summary.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0dvikcw1v49m7f12yi8df1adogpx' name='outlier_revenue_summary.csv' table='[outlier_revenue_summary#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='testgroup' ordinal='0' />
+            <column datatype='integer' name='paying_users' ordinal='1' />
+            <column datatype='integer' name='high_revenue_outliers' ordinal='2' />
+            <column datatype='integer' name='total_revenue' ordinal='3' />
+            <column datatype='integer' name='outlier_revenue' ordinal='4' />
+            <column datatype='real' name='outlier_share_of_payers_pct' ordinal='5' />
+            <column datatype='real' name='outlier_share_of_revenue_pct' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[outlier_revenue_summary.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>testgroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[testgroup]</local-name>
+            <parent-name>[outlier_revenue_summary.csv]</parent-name>
+            <remote-alias>testgroup</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>paying_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[paying_users]</local-name>
+            <parent-name>[outlier_revenue_summary.csv]</parent-name>
+            <remote-alias>paying_users</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>high_revenue_outliers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[high_revenue_outliers]</local-name>
+            <parent-name>[outlier_revenue_summary.csv]</parent-name>
+            <remote-alias>high_revenue_outliers</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_revenue]</local-name>
+            <parent-name>[outlier_revenue_summary.csv]</parent-name>
+            <remote-alias>total_revenue</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>outlier_revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[outlier_revenue]</local-name>
+            <parent-name>[outlier_revenue_summary.csv]</parent-name>
+            <remote-alias>outlier_revenue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>outlier_share_of_payers_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[outlier_share_of_payers_pct]</local-name>
+            <parent-name>[outlier_revenue_summary.csv]</parent-name>
+            <remote-alias>outlier_share_of_payers_pct</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>outlier_share_of_revenue_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[outlier_share_of_revenue_pct]</local-name>
+            <parent-name>[outlier_revenue_summary.csv]</parent-name>
+            <remote-alias>outlier_share_of_revenue_pct</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Non-Flagged Revenue Share' datatype='real' name='[Calculation_2954994712046063616]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='100 - [outlier_share_of_revenue_pct]' />
+      </column>
+      <column caption='outlier_revenue_summary.csv' datatype='table' name='[__tableau_internal_object_id__].[outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475]' role='measure' type='quantitative' />
+      <column caption='High Revenue Outliers' datatype='integer' name='[high_revenue_outliers]' role='measure' type='quantitative' />
+      <column caption='Outlier Revenue' datatype='integer' name='[outlier_revenue]' role='measure' type='quantitative' />
+      <column caption='Outlier Share Of Payers Pct' datatype='real' name='[outlier_share_of_payers_pct]' role='measure' type='quantitative' />
+      <column caption='IQR-Flagged Revenue Share' datatype='real' name='[outlier_share_of_revenue_pct]' role='measure' type='quantitative' />
+      <column caption='Paying Users' datatype='integer' name='[paying_users]' role='measure' type='quantitative' />
+      <column caption='Testgroup' datatype='string' name='[testgroup]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;a&quot;' value='Group A' />
+          <alias key='&quot;b&quot;' value='Group B' />
+        </aliases>
+      </column>
+      <column caption='Total Revenue' datatype='integer' name='[total_revenue]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_2954994712046063616]' derivation='Sum' name='[sum:Calculation_2954994712046063616:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[high_revenue_outliers]' derivation='Sum' name='[sum:high_revenue_outliers:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[outlier_revenue]' derivation='Sum' name='[sum:outlier_revenue:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[outlier_share_of_payers_pct]' derivation='Sum' name='[sum:outlier_share_of_payers_pct:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[outlier_share_of_revenue_pct]' derivation='Sum' name='[sum:outlier_share_of_revenue_pct:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[paying_users]' derivation='Sum' name='[sum:paying_users:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_revenue]' derivation='Sum' name='[sum:total_revenue:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='/var/folders/m8/79c70_4d4xn1s1qrrkxly4p40000gn/T/tableau-temp/#TableauTemp_1lhel1l1qp17a41gjcwil12m2r61.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/24/2026 10:48:20 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>testgroup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[testgroup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>testgroup</remote-alias>
+              <ordinal>0</ordinal>
+              <family>outlier_revenue_summary.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>paying_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[paying_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>paying_users</remote-alias>
+              <ordinal>1</ordinal>
+              <family>outlier_revenue_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>high_revenue_outliers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[high_revenue_outliers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>high_revenue_outliers</remote-alias>
+              <ordinal>2</ordinal>
+              <family>outlier_revenue_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_revenue</remote-alias>
+              <ordinal>3</ordinal>
+              <family>outlier_revenue_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>outlier_revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[outlier_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>outlier_revenue</remote-alias>
+              <ordinal>4</ordinal>
+              <family>outlier_revenue_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>outlier_share_of_payers_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[outlier_share_of_payers_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>outlier_share_of_payers_pct</remote-alias>
+              <ordinal>5</ordinal>
+              <family>outlier_revenue_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>outlier_share_of_revenue_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[outlier_share_of_revenue_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>outlier_share_of_revenue_pct</remote-alias>
+              <ordinal>6</ordinal>
+              <family>outlier_revenue_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1kulcyv1unzu25144d6ed1brpb88].[__tableau_internal_object_id__].[cnt:outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1kulcyv1unzu25144d6ed1brpb88].[sum:outlier_revenue:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1kulcyv1unzu25144d6ed1brpb88].[sum:Calculation_2954994712046063616:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1kulcyv1unzu25144d6ed1brpb88].[sum:paying_users:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1kulcyv1unzu25144d6ed1brpb88].[sum:outlier_share_of_revenue_pct:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1kulcyv1unzu25144d6ed1brpb88].[sum:outlier_share_of_payers_pct:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1kulcyv1unzu25144d6ed1brpb88].[sum:high_revenue_outliers:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1kulcyv1unzu25144d6ed1brpb88].[sum:total_revenue:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='outlier_revenue_summary.csv' id='outlier_revenue_summary.csv_3E44F92FDB754233A86CD3D4231DE475'>
+            <properties context=''>
+              <relation connection='textscan.0dvikcw1v49m7f12yi8df1adogpx' name='outlier_revenue_summary.csv' table='[outlier_revenue_summary#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='testgroup' ordinal='0' />
+                  <column datatype='integer' name='paying_users' ordinal='1' />
+                  <column datatype='integer' name='high_revenue_outliers' ordinal='2' />
+                  <column datatype='integer' name='total_revenue' ordinal='3' />
+                  <column datatype='integer' name='outlier_revenue' ordinal='4' />
+                  <column datatype='real' name='outlier_share_of_payers_pct' ordinal='5' />
+                  <column datatype='real' name='outlier_share_of_revenue_pct' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='retention_curve' inline='true' name='federated.0wofnzr1k9hx1o144l34y0ac0oz7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='retention_curve' name='textscan.1kcfz1m0xnj8na1exfad5039i65w'>
+            <connection class='textscan' directory='/Users/zhrs/Documents/Data Analytics Portfolio/Mobile-Game-Retention-AB-Testing/outputs' filename='retention_curve.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1kcfz1m0xnj8na1exfad5039i65w' name='retention_curve.csv' table='[retention_curve#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='day_number' ordinal='0' />
+            <column datatype='integer' name='eligible_users' ordinal='1' />
+            <column datatype='integer' name='retained_users' ordinal='2' />
+            <column datatype='real' name='retention_rate_pct' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[retention_curve.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day_number]</local-name>
+            <parent-name>[retention_curve.csv]</parent-name>
+            <remote-alias>day_number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[retention_curve.csv_B47C4A551C8B4296B21994136BD8D94D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eligible_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[eligible_users]</local-name>
+            <parent-name>[retention_curve.csv]</parent-name>
+            <remote-alias>eligible_users</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[retention_curve.csv_B47C4A551C8B4296B21994136BD8D94D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retained_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[retained_users]</local-name>
+            <parent-name>[retention_curve.csv]</parent-name>
+            <remote-alias>retained_users</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[retention_curve.csv_B47C4A551C8B4296B21994136BD8D94D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retention_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[retention_rate_pct]</local-name>
+            <parent-name>[retention_curve.csv]</parent-name>
+            <remote-alias>retention_rate_pct</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[retention_curve.csv_B47C4A551C8B4296B21994136BD8D94D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='retention_curve.csv' datatype='table' name='[__tableau_internal_object_id__].[retention_curve.csv_B47C4A551C8B4296B21994136BD8D94D]' role='measure' type='quantitative' />
+      <column caption='Day Number' datatype='integer' name='[day_number]' role='dimension' type='quantitative' />
+      <column caption='Eligible Users' datatype='integer' name='[eligible_users]' role='measure' type='quantitative' />
+      <column caption='Retained Users' datatype='integer' name='[retained_users]' role='measure' type='quantitative' />
+      <column caption='Retention Rate Pct' datatype='real' name='[retention_rate_pct]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='/var/folders/m8/79c70_4d4xn1s1qrrkxly4p40000gn/T/tableau-temp/#TableauTemp_0dopi6m0j9hhyt1cvfb1h03tzidp.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/24/2026 11:00:02 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>day_number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[day_number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day_number</remote-alias>
+              <ordinal>0</ordinal>
+              <family>retention_curve.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[retention_curve.csv_B47C4A551C8B4296B21994136BD8D94D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>eligible_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[eligible_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>eligible_users</remote-alias>
+              <ordinal>1</ordinal>
+              <family>retention_curve.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[retention_curve.csv_B47C4A551C8B4296B21994136BD8D94D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>retained_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[retained_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>retained_users</remote-alias>
+              <ordinal>2</ordinal>
+              <family>retention_curve.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[retention_curve.csv_B47C4A551C8B4296B21994136BD8D94D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>retention_rate_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[retention_rate_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>retention_rate_pct</remote-alias>
+              <ordinal>3</ordinal>
+              <family>retention_curve.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[retention_curve.csv_B47C4A551C8B4296B21994136BD8D94D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='retention_curve.csv' id='retention_curve.csv_B47C4A551C8B4296B21994136BD8D94D'>
+            <properties context=''>
+              <relation connection='textscan.1kcfz1m0xnj8na1exfad5039i65w' name='retention_curve.csv' table='[retention_curve#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='day_number' ordinal='0' />
+                  <column datatype='integer' name='eligible_users' ordinal='1' />
+                  <column datatype='integer' name='retained_users' ordinal='2' />
+                  <column datatype='real' name='retention_rate_pct' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='monthly_cohort_retention' inline='true' name='federated.0q4l8hm1tew4b71axkz5j063bphx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='monthly_cohort_retention' name='textscan.0l90u4r0mh23xm15kvmcz0s5ttsp'>
+            <connection class='textscan' directory='/Users/zhrs/Documents/Data Analytics Portfolio/Mobile-Game-Retention-AB-Testing/outputs' filename='monthly_cohort_retention.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0l90u4r0mh23xm15kvmcz0s5ttsp' name='monthly_cohort_retention.csv' table='[monthly_cohort_retention#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='date' name='cohort_month' ordinal='0' />
+            <column datatype='integer' name='cohort_size' ordinal='1' />
+            <column datatype='integer' name='eligible_day_1_users' ordinal='2' />
+            <column datatype='integer' name='retained_day_1_users' ordinal='3' />
+            <column datatype='real' name='day_1_retention_rate_pct' ordinal='4' />
+            <column datatype='integer' name='eligible_day_7_users' ordinal='5' />
+            <column datatype='integer' name='retained_day_7_users' ordinal='6' />
+            <column datatype='real' name='day_7_retention_rate_pct' ordinal='7' />
+            <column datatype='integer' name='eligible_day_30_users' ordinal='8' />
+            <column datatype='integer' name='retained_day_30_users' ordinal='9' />
+            <column datatype='real' name='day_30_retention_rate_pct' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[monthly_cohort_retention.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cohort_month</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[cohort_month]</local-name>
+            <parent-name>[monthly_cohort_retention.csv]</parent-name>
+            <remote-alias>cohort_month</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cohort_size</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cohort_size]</local-name>
+            <parent-name>[monthly_cohort_retention.csv]</parent-name>
+            <remote-alias>cohort_size</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eligible_day_1_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[eligible_day_1_users]</local-name>
+            <parent-name>[monthly_cohort_retention.csv]</parent-name>
+            <remote-alias>eligible_day_1_users</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retained_day_1_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[retained_day_1_users]</local-name>
+            <parent-name>[monthly_cohort_retention.csv]</parent-name>
+            <remote-alias>retained_day_1_users</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_1_retention_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[day_1_retention_rate_pct]</local-name>
+            <parent-name>[monthly_cohort_retention.csv]</parent-name>
+            <remote-alias>day_1_retention_rate_pct</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eligible_day_7_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[eligible_day_7_users]</local-name>
+            <parent-name>[monthly_cohort_retention.csv]</parent-name>
+            <remote-alias>eligible_day_7_users</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retained_day_7_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[retained_day_7_users]</local-name>
+            <parent-name>[monthly_cohort_retention.csv]</parent-name>
+            <remote-alias>retained_day_7_users</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_7_retention_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[day_7_retention_rate_pct]</local-name>
+            <parent-name>[monthly_cohort_retention.csv]</parent-name>
+            <remote-alias>day_7_retention_rate_pct</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eligible_day_30_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[eligible_day_30_users]</local-name>
+            <parent-name>[monthly_cohort_retention.csv]</parent-name>
+            <remote-alias>eligible_day_30_users</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retained_day_30_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[retained_day_30_users]</local-name>
+            <parent-name>[monthly_cohort_retention.csv]</parent-name>
+            <remote-alias>retained_day_30_users</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_30_retention_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[day_30_retention_rate_pct]</local-name>
+            <parent-name>[monthly_cohort_retention.csv]</parent-name>
+            <remote-alias>day_30_retention_rate_pct</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='monthly_cohort_retention.csv' datatype='table' name='[__tableau_internal_object_id__].[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]' role='measure' type='quantitative' />
+      <column caption='Cohort Month' datatype='date' name='[cohort_month]' role='dimension' type='ordinal' />
+      <column caption='Cohort Size' datatype='integer' name='[cohort_size]' role='measure' type='quantitative' />
+      <column caption='Day 1 Retention Rate Pct' datatype='real' name='[day_1_retention_rate_pct]' role='dimension' type='quantitative' />
+      <column caption='Day 30 Retention Rate Pct' datatype='real' name='[day_30_retention_rate_pct]' role='dimension' type='quantitative' />
+      <column caption='Day 7 Retention Rate Pct' datatype='real' name='[day_7_retention_rate_pct]' role='dimension' type='quantitative' />
+      <column caption='Eligible Day 1 Users' datatype='integer' name='[eligible_day_1_users]' role='measure' type='quantitative' />
+      <column caption='Eligible Day 30 Users' datatype='integer' name='[eligible_day_30_users]' role='measure' type='quantitative' />
+      <column caption='Eligible Day 7 Users' datatype='integer' name='[eligible_day_7_users]' role='measure' type='quantitative' />
+      <column caption='Retained Day 1 Users' datatype='integer' name='[retained_day_1_users]' role='measure' type='quantitative' />
+      <column caption='Retained Day 30 Users' datatype='integer' name='[retained_day_30_users]' role='measure' type='quantitative' />
+      <column caption='Retained Day 7 Users' datatype='integer' name='[retained_day_7_users]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[cohort_size]' derivation='Sum' name='[sum:cohort_size:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[eligible_day_1_users]' derivation='Sum' name='[sum:eligible_day_1_users:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[eligible_day_30_users]' derivation='Sum' name='[sum:eligible_day_30_users:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[eligible_day_7_users]' derivation='Sum' name='[sum:eligible_day_7_users:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[retained_day_1_users]' derivation='Sum' name='[sum:retained_day_1_users:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[retained_day_30_users]' derivation='Sum' name='[sum:retained_day_30_users:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[retained_day_7_users]' derivation='Sum' name='[sum:retained_day_7_users:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='/var/folders/m8/79c70_4d4xn1s1qrrkxly4p40000gn/T/tableau-temp/#TableauTemp_1gu8z7b1lvlgq21bs7x4k0yo5l51.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/24/2026 11:22:38 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>cohort_month</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[cohort_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cohort_month</remote-alias>
+              <ordinal>0</ordinal>
+              <family>monthly_cohort_retention.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cohort_size</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cohort_size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cohort_size</remote-alias>
+              <ordinal>1</ordinal>
+              <family>monthly_cohort_retention.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>eligible_day_1_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[eligible_day_1_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>eligible_day_1_users</remote-alias>
+              <ordinal>2</ordinal>
+              <family>monthly_cohort_retention.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>retained_day_1_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[retained_day_1_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>retained_day_1_users</remote-alias>
+              <ordinal>3</ordinal>
+              <family>monthly_cohort_retention.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day_1_retention_rate_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[day_1_retention_rate_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day_1_retention_rate_pct</remote-alias>
+              <ordinal>4</ordinal>
+              <family>monthly_cohort_retention.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>eligible_day_7_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[eligible_day_7_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>eligible_day_7_users</remote-alias>
+              <ordinal>5</ordinal>
+              <family>monthly_cohort_retention.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>retained_day_7_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[retained_day_7_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>retained_day_7_users</remote-alias>
+              <ordinal>6</ordinal>
+              <family>monthly_cohort_retention.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day_7_retention_rate_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[day_7_retention_rate_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day_7_retention_rate_pct</remote-alias>
+              <ordinal>7</ordinal>
+              <family>monthly_cohort_retention.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>eligible_day_30_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[eligible_day_30_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>eligible_day_30_users</remote-alias>
+              <ordinal>8</ordinal>
+              <family>monthly_cohort_retention.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>retained_day_30_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[retained_day_30_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>retained_day_30_users</remote-alias>
+              <ordinal>9</ordinal>
+              <family>monthly_cohort_retention.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day_30_retention_rate_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[day_30_retention_rate_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day_30_retention_rate_pct</remote-alias>
+              <ordinal>10</ordinal>
+              <family>monthly_cohort_retention.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0q4l8hm1tew4b71axkz5j063bphx].[sum:cohort_size:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0q4l8hm1tew4b71axkz5j063bphx].[sum:eligible_day_7_users:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0q4l8hm1tew4b71axkz5j063bphx].[sum:eligible_day_30_users:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0q4l8hm1tew4b71axkz5j063bphx].[sum:retained_day_30_users:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0q4l8hm1tew4b71axkz5j063bphx].[sum:eligible_day_1_users:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0q4l8hm1tew4b71axkz5j063bphx].[sum:retained_day_1_users:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0q4l8hm1tew4b71axkz5j063bphx].[__tableau_internal_object_id__].[cnt:monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.0q4l8hm1tew4b71axkz5j063bphx].[sum:retained_day_7_users:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='monthly_cohort_retention.csv' id='monthly_cohort_retention.csv_DA10C85CC7204D6AA04E037DD78D890B'>
+            <properties context=''>
+              <relation connection='textscan.0l90u4r0mh23xm15kvmcz0s5ttsp' name='monthly_cohort_retention.csv' table='[monthly_cohort_retention#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='date' name='cohort_month' ordinal='0' />
+                  <column datatype='integer' name='cohort_size' ordinal='1' />
+                  <column datatype='integer' name='eligible_day_1_users' ordinal='2' />
+                  <column datatype='integer' name='retained_day_1_users' ordinal='3' />
+                  <column datatype='real' name='day_1_retention_rate_pct' ordinal='4' />
+                  <column datatype='integer' name='eligible_day_7_users' ordinal='5' />
+                  <column datatype='integer' name='retained_day_7_users' ordinal='6' />
+                  <column datatype='real' name='day_7_retention_rate_pct' ordinal='7' />
+                  <column datatype='integer' name='eligible_day_30_users' ordinal='8' />
+                  <column datatype='integer' name='retained_day_30_users' ordinal='9' />
+                  <column datatype='real' name='day_30_retention_rate_pct' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='A-B KPI Summary'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='16'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ab_test_group_summary' name='federated.1muo9cy1drb53y17v8ehf19otpxz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1muo9cy1drb53y17v8ehf19otpxz'>
+            <column caption='Average Revenue Per Payer' datatype='real' name='[average_revenue_per_payer]' role='measure' type='quantitative' />
+            <column caption='Average Revenue Per User' datatype='real' name='[average_revenue_per_user]' role='measure' type='quantitative' />
+            <column-instance column='[testgroup]' derivation='None' name='[none:testgroup:nk]' pivot='key' type='nominal' />
+            <column caption='Participants' datatype='integer' name='[participants]' role='measure' type='quantitative' />
+            <column caption='Payer Conversion Rate Pct' datatype='real' name='[payer_conversion_rate_pct]' role='measure' type='quantitative' />
+            <column caption='Paying Users' datatype='integer' name='[paying_users]' role='measure' type='quantitative' />
+            <column-instance column='[average_revenue_per_payer]' derivation='Sum' name='[sum:average_revenue_per_payer:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[average_revenue_per_user]' derivation='Sum' name='[sum:average_revenue_per_user:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[participants]' derivation='Sum' name='[sum:participants:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[payer_conversion_rate_pct]' derivation='Sum' name='[sum:payer_conversion_rate_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[paying_users]' derivation='Sum' name='[sum:paying_users:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_revenue]' derivation='Sum' name='[sum:total_revenue:qk]' pivot='key' type='quantitative' />
+            <column caption='Testgroup' datatype='string' name='[testgroup]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;a&quot;' value='Group A' />
+                <alias key='&quot;b&quot;' value='Group B' />
+              </aliases>
+            </column>
+            <column caption='Total Revenue' datatype='integer' name='[total_revenue]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1muo9cy1drb53y17v8ehf19otpxz].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1muo9cy1drb53y17v8ehf19otpxz].[sum:average_revenue_per_payer:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1muo9cy1drb53y17v8ehf19otpxz].[sum:average_revenue_per_user:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1muo9cy1drb53y17v8ehf19otpxz].[sum:participants:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1muo9cy1drb53y17v8ehf19otpxz].[sum:payer_conversion_rate_pct:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1muo9cy1drb53y17v8ehf19otpxz].[sum:paying_users:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1muo9cy1drb53y17v8ehf19otpxz].[sum:total_revenue:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1muo9cy1drb53y17v8ehf19otpxz].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1muo9cy1drb53y17v8ehf19otpxz].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1muo9cy1drb53y17v8ehf19otpxz].[:Measure Names]</rows>
+        <cols>[federated.1muo9cy1drb53y17v8ehf19otpxz].[none:testgroup:nk]</cols>
+      </table>
+      <simple-id uuid='{2460970C-0DB7-4E7B-B401-9690BB3651F4}' />
+    </worksheet>
+    <worksheet name='ARPU After IQR Exclusion'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='16'>ARPU After IQR-Based Exclusion</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sensitivity_analysis_summary' name='federated.0uydquq1gvep231a2ti931tjdauy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0uydquq1gvep231a2ti931tjdauy'>
+            <column caption='Average Revenue Per User' datatype='real' name='[average_revenue_per_user]' role='measure' type='quantitative' />
+            <column-instance column='[average_revenue_per_user]' derivation='Avg' name='[avg:average_revenue_per_user:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[testgroup]' derivation='None' name='[none:testgroup:nk]' pivot='key' type='nominal' />
+            <column caption='Testgroup' datatype='string' name='[testgroup]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;a&quot;' value='Group A' />
+                <alias key='&quot;b&quot;' value='Group B' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0uydquq1gvep231a2ti931tjdauy].[avg:average_revenue_per_user:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0uydquq1gvep231a2ti931tjdauy].[none:testgroup:nk]' />
+              <text column='[federated.0uydquq1gvep231a2ti931tjdauy].[avg:average_revenue_per_user:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0uydquq1gvep231a2ti931tjdauy].[avg:average_revenue_per_user:qk]</rows>
+        <cols>[federated.0uydquq1gvep231a2ti931tjdauy].[none:testgroup:nk]</cols>
+      </table>
+      <simple-id uuid='{2CF785F1-F0B3-4D0C-BA98-43F8C0C52801}' />
+    </worksheet>
+    <worksheet name='Exact-Day Retention Curve'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='16'>Exact-Day User Retention: Days 1–30</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='retention_curve' name='federated.0wofnzr1k9hx1o144l34y0ac0oz7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wofnzr1k9hx1o144l34y0ac0oz7'>
+            <column-instance column='[retention_rate_pct]' derivation='Avg' name='[avg:retention_rate_pct:qk]' pivot='key' type='quantitative' />
+            <column caption='Day Number' datatype='integer' name='[day_number]' role='dimension' type='quantitative' />
+            <column caption='Eligible Users' datatype='integer' name='[eligible_users]' role='measure' type='quantitative' />
+            <column-instance column='[day_number]' derivation='None' name='[none:day_number:qk]' pivot='key' type='quantitative' />
+            <column caption='Retained Users' datatype='integer' name='[retained_users]' role='measure' type='quantitative' />
+            <column caption='Retention Rate Pct' datatype='real' name='[retention_rate_pct]' role='measure' type='quantitative' />
+            <column-instance column='[eligible_users]' derivation='Sum' name='[sum:eligible_users:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[retained_users]' derivation='Sum' name='[sum:retained_users:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0wofnzr1k9hx1o144l34y0ac0oz7].[none:day_number:qk]' field-type='quantitative' max='30' min='1' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0wofnzr1k9hx1o144l34y0ac0oz7].[none:day_number:qk]' value='' />
+            <format attr='text-format' field='[federated.0wofnzr1k9hx1o144l34y0ac0oz7].[avg:retention_rate_pct:qk]' value='n#,##0.00&quot;%&quot;;-#,##0.00&quot;%&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <tooltip column='[federated.0wofnzr1k9hx1o144l34y0ac0oz7].[sum:eligible_users:qk]' />
+              <tooltip column='[federated.0wofnzr1k9hx1o144l34y0ac0oz7].[sum:retained_users:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'>Day: &lt;day_number&gt;</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Retention rate: <AVG(retention_rate_pct)>%]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Eligible users: <SUM(eligible_users)>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[Retained users: <SUM(retained_users)>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.55972373485565186' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0wofnzr1k9hx1o144l34y0ac0oz7].[avg:retention_rate_pct:qk]</rows>
+        <cols>[federated.0wofnzr1k9hx1o144l34y0ac0oz7].[none:day_number:qk]</cols>
+      </table>
+      <simple-id uuid='{1B427A95-E37B-43B2-9F40-DDC18E3FE06B}' />
+    </worksheet>
+    <worksheet name='Full-Data ARPU'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='16'>Average Revenue per Participant</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ab_test_group_summary' name='federated.1muo9cy1drb53y17v8ehf19otpxz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1muo9cy1drb53y17v8ehf19otpxz'>
+            <column caption='Average Revenue Per User' datatype='real' name='[average_revenue_per_user]' role='measure' type='quantitative' />
+            <column-instance column='[average_revenue_per_user]' derivation='Avg' name='[avg:average_revenue_per_user:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[testgroup]' derivation='None' name='[none:testgroup:nk]' pivot='key' type='nominal' />
+            <column caption='Testgroup' datatype='string' name='[testgroup]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;a&quot;' value='Group A' />
+                <alias key='&quot;b&quot;' value='Group B' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1muo9cy1drb53y17v8ehf19otpxz].[avg:average_revenue_per_user:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1muo9cy1drb53y17v8ehf19otpxz].[none:testgroup:nk]' />
+              <text column='[federated.1muo9cy1drb53y17v8ehf19otpxz].[avg:average_revenue_per_user:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1muo9cy1drb53y17v8ehf19otpxz].[avg:average_revenue_per_user:qk]</rows>
+        <cols>[federated.1muo9cy1drb53y17v8ehf19otpxz].[none:testgroup:nk]</cols>
+      </table>
+      <simple-id uuid='{FF50D279-C0D3-4115-B3B3-9D00462B2164}' />
+    </worksheet>
+    <worksheet name='Monthly Cohort Retention'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='16'>Exact-Day Retention by Registration Cohort</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='monthly_cohort_retention' name='federated.0q4l8hm1tew4b71axkz5j063bphx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0q4l8hm1tew4b71axkz5j063bphx'>
+            <column caption='Cohort Month' datatype='date' name='[cohort_month]' role='dimension' type='ordinal' />
+            <column caption='Eligible Day 1 Users' datatype='integer' name='[eligible_day_1_users]' role='measure' type='quantitative' />
+            <column caption='Eligible Day 30 Users' datatype='integer' name='[eligible_day_30_users]' role='measure' type='quantitative' />
+            <column caption='Eligible Day 7 Users' datatype='integer' name='[eligible_day_7_users]' role='measure' type='quantitative' />
+            <column-instance column='[cohort_month]' derivation='Month' name='[mn:cohort_month:qk]' pivot='key' type='quantitative' />
+            <column caption='Retained Day 1 Users' datatype='integer' name='[retained_day_1_users]' role='measure' type='quantitative' />
+            <column caption='Retained Day 30 Users' datatype='integer' name='[retained_day_30_users]' role='measure' type='quantitative' />
+            <column caption='Retained Day 7 Users' datatype='integer' name='[retained_day_7_users]' role='measure' type='quantitative' />
+            <column-instance column='[eligible_day_1_users]' derivation='Sum' name='[sum:eligible_day_1_users:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[eligible_day_30_users]' derivation='Sum' name='[sum:eligible_day_30_users:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[eligible_day_7_users]' derivation='Sum' name='[sum:eligible_day_7_users:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[retained_day_1_users]' derivation='Sum' name='[sum:retained_day_1_users:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[retained_day_30_users]' derivation='Sum' name='[sum:retained_day_30_users:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[retained_day_7_users]' derivation='Sum' name='[sum:retained_day_7_users:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0q4l8hm1tew4b71axkz5j063bphx].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0q4l8hm1tew4b71axkz5j063bphx].[sum:eligible_day_1_users:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0q4l8hm1tew4b71axkz5j063bphx].[sum:eligible_day_30_users:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0q4l8hm1tew4b71axkz5j063bphx].[sum:eligible_day_7_users:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0q4l8hm1tew4b71axkz5j063bphx].[sum:retained_day_1_users:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0q4l8hm1tew4b71axkz5j063bphx].[sum:retained_day_30_users:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0q4l8hm1tew4b71axkz5j063bphx].[sum:retained_day_7_users:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0q4l8hm1tew4b71axkz5j063bphx].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0q4l8hm1tew4b71axkz5j063bphx].[Multiple Values]' scope='rows' value='Retention Rate (%)' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0q4l8hm1tew4b71axkz5j063bphx].[Multiple Values]' value='n#,##0.00&quot;%&quot;;-#,##0.00&quot;%&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0q4l8hm1tew4b71axkz5j063bphx].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.6151933670043945' />
+                <format attr='mark-markers-mode' value='auto' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0q4l8hm1tew4b71axkz5j063bphx].[Multiple Values]</rows>
+        <cols>[federated.0q4l8hm1tew4b71axkz5j063bphx].[mn:cohort_month:qk]</cols>
+      </table>
+      <simple-id uuid='{2F714844-C075-4574-8429-FCBCF2E1D2A4}' />
+    </worksheet>
+    <worksheet name='Payer Conversion'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='16'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ab_test_group_summary' name='federated.1muo9cy1drb53y17v8ehf19otpxz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1muo9cy1drb53y17v8ehf19otpxz'>
+            <column-instance column='[testgroup]' derivation='None' name='[none:testgroup:nk]' pivot='key' type='nominal' />
+            <column caption='Payer Conversion Rate Pct' datatype='real' name='[payer_conversion_rate_pct]' role='measure' type='quantitative' />
+            <column-instance column='[payer_conversion_rate_pct]' derivation='Sum' name='[sum:payer_conversion_rate_pct:qk]' pivot='key' type='quantitative' />
+            <column caption='Testgroup' datatype='string' name='[testgroup]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;a&quot;' value='Group A' />
+                <alias key='&quot;b&quot;' value='Group B' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1muo9cy1drb53y17v8ehf19otpxz].[sum:payer_conversion_rate_pct:qk]' value='n#,##0.00&quot;%&quot;;-#,##0.00&quot;%&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1muo9cy1drb53y17v8ehf19otpxz].[none:testgroup:nk]' />
+              <text column='[federated.1muo9cy1drb53y17v8ehf19otpxz].[sum:payer_conversion_rate_pct:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1muo9cy1drb53y17v8ehf19otpxz].[sum:payer_conversion_rate_pct:qk]</rows>
+        <cols>[federated.1muo9cy1drb53y17v8ehf19otpxz].[none:testgroup:nk]</cols>
+      </table>
+      <simple-id uuid='{AD4172E0-EC0C-45FF-8339-DB586CB78EB7}' />
+    </worksheet>
+    <worksheet name='Revenue Concentration'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='16'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='outlier_revenue_summary' name='federated.1kulcyv1unzu25144d6ed1brpb88' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kulcyv1unzu25144d6ed1brpb88'>
+            <column caption='Non-Flagged Revenue Share' datatype='real' name='[Calculation_2954994712046063616]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='100 - [outlier_share_of_revenue_pct]' />
+            </column>
+            <column-instance column='[testgroup]' derivation='None' name='[none:testgroup:nk]' pivot='key' type='nominal' />
+            <column caption='IQR-Flagged Revenue Share' datatype='real' name='[outlier_share_of_revenue_pct]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_2954994712046063616]' derivation='Sum' name='[sum:Calculation_2954994712046063616:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[outlier_share_of_revenue_pct]' derivation='Sum' name='[sum:outlier_share_of_revenue_pct:qk]' pivot='key' type='quantitative' />
+            <column caption='Testgroup' datatype='string' name='[testgroup]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;a&quot;' value='Group A' />
+                <alias key='&quot;b&quot;' value='Group B' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1kulcyv1unzu25144d6ed1brpb88].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1kulcyv1unzu25144d6ed1brpb88].[sum:outlier_share_of_revenue_pct:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1kulcyv1unzu25144d6ed1brpb88].[sum:Calculation_2954994712046063616:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1kulcyv1unzu25144d6ed1brpb88].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1kulcyv1unzu25144d6ed1brpb88].[Multiple Values]' field-type='quantitative' max='100.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1kulcyv1unzu25144d6ed1brpb88].[Multiple Values]' value='n#,##0.00&quot;%&quot;;-#,##0.00&quot;%&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1kulcyv1unzu25144d6ed1brpb88].[:Measure Names]' />
+              <text column='[federated.1kulcyv1unzu25144d6ed1brpb88].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1kulcyv1unzu25144d6ed1brpb88].[Multiple Values]</rows>
+        <cols>[federated.1kulcyv1unzu25144d6ed1brpb88].[none:testgroup:nk]</cols>
+      </table>
+      <simple-id uuid='{77971F71-4EE5-48DF-A1A7-46C8A7F5631A}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='114'>
+    <window class='worksheet' name='A-B KPI Summary'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C3FD19E6-8303-4E03-9970-951D2347A6B0}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Payer Conversion'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1muo9cy1drb53y17v8ehf19otpxz].[none:testgroup:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6E00644D-16E4-4AB6-BEC8-B5EBA5C40BF9}' />
+    </window>
+    <window class='worksheet' name='Full-Data ARPU'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1muo9cy1drb53y17v8ehf19otpxz].[none:testgroup:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{99D70550-95D8-4715-ADF2-988F69D28242}' />
+    </window>
+    <window class='worksheet' name='ARPU After IQR Exclusion'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0uydquq1gvep231a2ti931tjdauy].[none:testgroup:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{394CCB37-58E1-4CD7-BB45-4B82B899F22B}' />
+    </window>
+    <window class='worksheet' name='Revenue Concentration'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1kulcyv1unzu25144d6ed1brpb88].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AEB310AD-E9FD-4D1F-9E58-45044873E635}' />
+    </window>
+    <window class='worksheet' name='Exact-Day Retention Curve'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{53C6650D-EF58-462B-97A8-8D99D411A5A8}' />
+    </window>
+    <window class='worksheet' name='Monthly Cohort Retention'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0q4l8hm1tew4b71axkz5j063bphx].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CE6D9CE6-FC63-4129-9B52-374095F3A39B}' />
+    </window>
+  </windows>
+</workbook>
