@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS raw.ab_test (
 );
 
 -- Create indexes to improve join and retention-analysis performance
-CREATE INDEX IF NOT EXISTS idx_registratins_uid
+CREATE INDEX IF NOT EXISTS idx_registrations_uid
 	ON raw.registrations (uid);
 
 CREATE INDEX IF NOT EXISTS idx_authentication_uid_auth_ts

@@ -43,7 +43,7 @@ FROM raw.registrations;
 -- Authentication data
 SELECT
 	COUNT(*) FILTER (WHERE auth_ts IS NULL) AS null_auth_ts,
-	COUNT(*) FILTER (WHERE uid IS NULL) AS anull_uid
+	COUNT(*) FILTER (WHERE uid IS NULL) AS null_uid
 FROM raw.authentications;
 
 -- A/B test data
@@ -63,7 +63,7 @@ FROM raw.ab_test;
 -- Each user is expected to have one registration record
 SELECT
 	COUNT(*) AS total_rows,
-	COUNT(DISTINCT uid) AS distinct_rows,
+	COUNT(DISTINCT uid) AS distinct_users,
 	COUNT(*) - COUNT(DISTINCT uid) AS duplicated_uid_rows
 FROM raw.registrations;
 
@@ -82,13 +82,13 @@ FROM raw.authentications;
 SELECT
 	COUNT(*) AS total_rows,
 	COUNT(DISTINCT user_id) AS distinct_users,
-	COUNT(*) - COUNT(DISTINCT user_id) AS duplocated_user_rows
+	COUNT(*) - COUNT(DISTINCT user_id) AS duplicated_user_rows
 FROM raw.ab_test;
 
 -- Check registration timestamp range
 SELECT
 	MIN(reg_ts) AS minimun_reg_ts,
-	MAX(reg_ts) AS maximum_re_ts,
+	MAX(reg_ts) AS maximum_reg_ts,
 	TO_TIMESTAMP(MIN(reg_ts)) AT TIME ZONE 'UTC' AS earliest_registration,
 	TO_TIMESTAMP(MAX(reg_ts)) AT TIME ZONE 'UTC' AS latest_registration
 FROM raw.registrations;
@@ -143,7 +143,7 @@ SELECT
 	) AS first_auth_after_registration
 FROM raw.registrations AS r
 JOIN first_authentication AS f
-	ON r.uid = f.uid
+	ON r.uid = f.uid;
 
 -- Check A/B test group values and participant counts
 SELECT

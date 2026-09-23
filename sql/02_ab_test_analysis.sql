@@ -87,7 +87,7 @@ GROUP BY
 	b.q3,
 	b.iqr,
 	b.upper_outlier_boundary
-ORDER BY a.testgroup
+ORDER BY a.testgroup;
 
 -- Measure the contribution of IQR-flagged revenue outliers
 WITH payer_quartiles AS (
@@ -108,7 +108,7 @@ outlier_boundaries AS (
 	SELECT
 		testgroup,
 		q3 + 1.5* (q3 - q1) AS upper_outlier_boundary
-	From payer_quartiles
+	FROM payer_quartiles
 )
 
 SELECT
@@ -130,7 +130,7 @@ SELECT
 		0
 	) AS revenue_outlier,
 	ROUND(
-		100 * COALESCE (
+		100.0 * COALESCE (
 			SUM(a.revenue) FILTER (
 				WHERE a.revenue > b.upper_outlier_boundary
 			),
