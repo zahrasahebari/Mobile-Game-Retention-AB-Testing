@@ -2,6 +2,10 @@
 
 Product analytics case study examining player retention, cohort behaviour, monetisation, revenue concentration, and A/B-test performance using PostgreSQL, Python, and Tableau.
 
+## Interactive Tableau Dashboard
+
+[View the interactive dashboard on Tableau Public](https://public.tableau.com/views/mobile_game_retention_dashboard_working/RevenueandConversion)
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
@@ -348,6 +352,7 @@ The unusual increase between Day 1 and the later early-life days should be inter
 ## Tableau Dashboards
 
 The Tableau workbook contains two dashboards within one workbook.
+[Open the interactive dashboards on Tableau Public](https://public.tableau.com/views/mobile_game_retention_dashboard_working/RevenueandConversion)
 
 ### Revenue and Conversion
 
